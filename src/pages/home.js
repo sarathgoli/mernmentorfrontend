@@ -35,7 +35,7 @@ function Home() {
   }, []);
 
   const getPosts = (variables) => {
-    const url = "http://localhost:5005/posts";
+    const url = "https://mentor-gvpce.herokuapp.com/posts";
 
     Axios.post(url, variables, {
       headers: { "content-type": "application/json" },
