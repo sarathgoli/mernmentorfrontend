@@ -1,0 +1,70 @@
+export const c_name=[
+    {
+        "id":1,
+        "name":"Amazon"
+    },
+    {
+        "id":2,
+        "name":"Google"
+    },
+    {
+        "id":3,
+        "name":"Tcs"
+    },
+    {
+        "id":4,
+        "name":"Wipro"
+    },
+    {
+        "id":5,
+        "name":"Infosys"
+    }
+]
+export const c_role=[
+    {
+        "id":1,
+        "name":"Amazon"
+    },
+    {
+        "id":2,
+        "name":"Google"
+    },
+    {
+        "id":3,
+        "name":"Tcs"
+    },
+    {
+        "id":4,
+        "name":"Wipro"
+    }
+]
+export const branch=[
+    {
+        "id":1,
+        "name":"Cse"
+    },
+    {
+        "id":2,
+        "name":"IT"
+    },
+    {
+        "id":3,
+        "name":"Chemical"
+    },
+    {
+        "id":4,
+        "name":"Civil"
+    },
+    {
+        "id":5,
+        "name":"Mechanical"
+    },
+    {
+        "id":6,
+        "name":"Ece"
+    },
+    {
+        "id":7,
+        "name":"Eee"
+    }
+]
