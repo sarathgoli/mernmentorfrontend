@@ -62,7 +62,7 @@ function App() {
         <Route exact path="/logout" component={Logout}/>
         )}
         {/* <Route component={Lost} /> */}
-        <Route exact path="*" component={Login}/>
+        <Route exact path="*" component={About}/>
       </Switch>
     </Router>
   );
