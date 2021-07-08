@@ -1,6 +1,6 @@
 import React from 'react'
 import Hero from '../components/Herosection/Hero';
-import {useEffect} from 'react-router-dom';
+import {useEffect} from 'react';
 import axios from 'axios';
 import { Redirect, useHistory } from "react-router-dom";
 import { useDispatch } from "react-redux";
