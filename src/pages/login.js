@@ -49,30 +49,7 @@ export default function Login() {
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    axios
-      .get("https://mentor-gvpce.herokuapp.com/", {
-        headers: {
-          "content-type": "application/json"
-        },
-        withCredentials: true
-      })
-      .then((res) => {
-        console.log(res.data);
-        if (res.data.isloggedin) {
-          dispatch(
-            login_redux({
-              user_name: res.data.name,
-              user_id: res.data.user_id,
-              isauthenticated: true,
-              isadmin: res.data.isadmin
-            })
-          );
-
-          history.push("/home");
-        }
-      });
-  }, []);
+ 
 
   const classes = useStyles();
 
