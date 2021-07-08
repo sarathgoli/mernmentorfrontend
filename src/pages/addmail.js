@@ -57,7 +57,7 @@ export default function Addmail() {
     if (validator.isEmail(mail)) {
       axios
         .post(
-          "http://localhost:5005/addadminmail",
+          "https://mentor-gvpce.herokuapp.com/addadminmail",
           { mail: mail },
           {
             headers: {

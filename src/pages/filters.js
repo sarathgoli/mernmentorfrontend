@@ -58,7 +58,7 @@ function Filter(props)
     
       useEffect(() => {
         axios
-          .get("http://localhost:5005/companies", {
+          .get("https://mentor-gvpce.herokuapp.com/companies", {
             headers: {
               "content-type": "application/json"
             },

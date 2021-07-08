@@ -90,7 +90,7 @@ export default function Register() {
       else{
           if(validator.isEmail(register.user_mail)){
             axios
-            .post("http://localhost:5005/register", register, {
+            .post("https://mentor-gvpce.herokuapp.com/register", register, {
               headers: {
                 "content-type": "application/json"
               },

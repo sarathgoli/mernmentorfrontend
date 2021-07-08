@@ -66,7 +66,7 @@ export default function Addingcdata() {
         } else {
             console.log(cdata)
           axios
-            .post("http://localhost:5005/addingcdata", cdata, {
+            .post("https://mentor-gvpce.herokuapp.com/addingcdata", cdata, {
               headers: {
                 "content-type": "application/json"
               },

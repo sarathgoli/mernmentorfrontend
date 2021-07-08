@@ -91,7 +91,7 @@ function Home() {
   function deletepost(post_id) {
     console.log(post_id);
     Axios.post(
-      "http://localhost:5005/deletepost",
+      "https://mentor-gvpce.herokuapp.com/deletepost",
       { id: post_id },
       {
         headers: { "content-type": "application/json" },

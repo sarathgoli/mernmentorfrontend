@@ -57,7 +57,7 @@ function Filter1(props)
       const [role,setRole]=useState([])
       useEffect(() => {
         axios
-          .get("http://localhost:5005/companies", {
+          .get("https://mentor-gvpce.herokuapp.com/companies", {
             headers: {
               "content-type": "application/json"
             },

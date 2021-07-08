@@ -69,7 +69,7 @@ const history=useHistory();
     } else {
       console.log(cdata);
       axios
-        .post("http://localhost:5005/updatingcdata", cdata, {
+        .post("https://mentor-gvpce.herokuapp.com/updatingcdata", cdata, {
           headers: {
             "content-type": "application/json"
           },

@@ -51,7 +51,7 @@ export default function Login() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5005/", {
+      .get("https://mentor-gvpce.herokuapp.com/", {
         headers: {
           "content-type": "application/json"
         },
@@ -105,7 +105,7 @@ export default function Login() {
       setOpen(true);
     } else {
       axios
-        .post("http://localhost:5005/", login, {
+        .post("https://mentor-gvpce.herokuapp.com/", login, {
           headers: {
             "content-type": "application/json"
           },

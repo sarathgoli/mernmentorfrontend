@@ -13,7 +13,7 @@ export default function Dashboard(props) {
     useEffect(() => {
         axios
         .post(
-          "http://localhost:5005/fetchuserposts",
+          "https://mentor-gvpce.herokuapp.com/fetchuserposts",
           variable,{
           headers: {
             "content-type": "application/json"

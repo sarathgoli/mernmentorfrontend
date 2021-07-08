@@ -8,7 +8,7 @@ export default function Displaypost(props) {
     useEffect(()=>{
 
         const variable={postId:postid};
-        axios.post("http://localhost:5005/displayingpost",variable,{
+        axios.post("https://mentor-gvpce.herokuapp.com/displayingpost",variable,{
             headers: {
               "content-type": "application/json"
             },

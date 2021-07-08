@@ -71,7 +71,7 @@ export default function Forgotpassword() {
     if (validator.isEmail(user_mail)) {
       axios
         .post(
-          "http://localhost:5005/resetlinkroute",
+          "https://mentor-gvpce.herokuapp.com/resetlinkroute",
           { user_mail },
           {
             headers: {

@@ -70,7 +70,7 @@ export default function Writeblog(props) {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5005/companies", {
+      .get("https://mentor-gvpce.herokuapp.com/companies", {
         headers: {
           "content-type": "application/json"
         },
@@ -124,7 +124,7 @@ export default function Writeblog(props) {
         console.log(new_blog);
 
         axios
-          .post("http://localhost:5005/testingreact", new_blog, {
+          .post("https://mentor-gvpce.herokuapp.com/testingreact", new_blog, {
             headers: {
               "content-type": "application/json"
             },

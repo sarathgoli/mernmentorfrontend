@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     useEffect(()=>{
         const postid=props.match.params.postid;
         const variable={postId:postid};
-        axios.post("http://localhost:5005/editpost",variable,{
+        axios.post("https://mentor-gvpce.herokuapp.com/editpost",variable,{
             headers: {
               "content-type": "application/json"
             },
@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
          
           axios
             .post(
-              "http://localhost:5005/updatepost",
+              "https://mentor-gvpce.herokuapp.com/updatepost",
               new_blog,{
               headers: {
                 "content-type": "application/json"

@@ -9,7 +9,7 @@ export default function Logout() {
     const history=useHistory();
     const dispatch = useDispatch();
     useEffect(()=>{
-    axios.post("http://localhost:5005/logout",{},{headers:{"content-type":"application/json"},withCredentials:true})
+    axios.post("https://mentor-gvpce.herokuapp.com/logout",{},{headers:{"content-type":"application/json"},withCredentials:true})
                 .then((response)=>{
                   if(!response)
                   {
