@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./components/Navbar/index";
+//import Navbar from "./components/Navbar/index";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/home";
@@ -19,13 +19,13 @@ import Addcdata from "./pages/addcdata";
 import Addingcdata from "./pages/addingcdata";
 import Updatingcdata from "./pages/updatingcdata"
 import AdminDashboard from "./pages/admindashboard";
-
-
+//import Sidebar from './components/sidebar/index';
+import { Navside } from "./pages/navside";
 function App() {
   const user = useSelector(selectUser);
   return (
     <Router>
-      <Navbar />
+    <Navside/>
       <Switch>
         {/* <Route exact path="/" component={About} /> */}
         {user != null && user.isauthenticated && (

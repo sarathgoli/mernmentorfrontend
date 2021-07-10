@@ -7,7 +7,7 @@ import axios from 'axios';
 import { selectUser } from "../redux_code/userSlice";
 import { useSelector } from "react-redux";
 import { DiRedhat } from "react-icons/di";
-export default function Navbar(){
+ const Navbar=({toggle})=>{
     const user = useSelector(selectUser);
     const [click,setClick]=useState(false);
     const history=useHistory();
@@ -31,7 +31,7 @@ export default function Navbar(){
                 <DiRedhat size={70}/>
                 Mentor
             </NavLink1>
-            <Bars/>
+            <Bars onClick={toggle}/>
             <NavMenu>
             <NavLink to="/home" activeStyle>
                 Home
@@ -49,7 +49,7 @@ export default function Navbar(){
             <DiRedhat size={70}/>
             Mentor
             </NavLink1>
-            <Bars/>
+            <Bars onClick={toggle}/>
             <NavMenu>
             <NavLink to="/home" activeStyle>
                 Home
@@ -69,7 +69,7 @@ export default function Navbar(){
             <DiRedhat size={70}/>
             Mentor
             </NavLink1>
-            <Bars/>
+            <Bars onClick={toggle}/>
             <NavMenu>
             <NavLink to="/home" activeStyle>
                 Home
@@ -91,4 +91,4 @@ export default function Navbar(){
     )
 
 }
-
+export default Navbar;
