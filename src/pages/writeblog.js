@@ -156,18 +156,11 @@ export default function Writeblog(props) {
     <div className={classes.root}>
       <form>
         <Container maxWidth="md">
-          <Grid container spacing={2} alignItems="center" justify="center">
-            <Grid item>
-              <Typography
-                style={{ padding: "0px", margin: "0px 0px" }}
-                variant="h1"
-                color="primary"
-              >
-                Write your blogs here
-              </Typography>
-            </Grid>
-            <Grid item spacing={3} direction="column" xs={4}>
-              <Typography color="primary">Select These Options</Typography>
+        <h2 style={{display:"flex",justifyContent:"center",color:"#015794",marginRight:"70px"}}>Write your content</h2>
+        <br/>
+          <Grid container spacing={2} alignItems="flex-start" justifyContent="center">
+            <Grid item spacing={3} direction="column">
+            <Grid item xs={12} style={{color:"#015794"}}>Select these options</Grid>
               <Grid item xs style={{ margin: "16px 0px" }}>
                 <TextField
                   name="title"
@@ -178,8 +171,8 @@ export default function Writeblog(props) {
                   variant="outlined"
                 />
               </Grid>
-              <Grid item xs style={{ margin: "16px 0px" }}>
-                <label> select company name </label>
+              <Grid item xs={12} style={{ margin: "16px 0px" }}>
+                <label style={{color:"#015794"}}> select company name </label>
                 <select
                   name="c_name"
                   value={new_blog.c_name}
@@ -197,8 +190,8 @@ export default function Writeblog(props) {
                   ))}
                 </select>
               </Grid>
-              <Grid item xs style={{ marginBottom: "16px" }}>
-                <label> select role </label>
+              <Grid item xs={12} style={{ marginBottom: "16px" }}>
+                <label style={{color:"#015794"}}> select role </label>
                 <select
                   name="c_role"
                   value={new_blog.c_role}
@@ -217,8 +210,8 @@ export default function Writeblog(props) {
                     ))}
                 </select>
               </Grid>
-              <Grid items xs style={{ marginBottom: "16px" }}>
-                <label> select branch </label>
+              <Grid item xs={12} style={{ marginBottom: "16px" }}>
+                <label style={{color:"#015794"}}> select branch </label>
                 <select
                   name="branch"
                   value={new_blog.branch}
@@ -237,7 +230,7 @@ export default function Writeblog(props) {
                 </select>
               </Grid>
             </Grid>
-            <Grid item xs={8}>
+            <Grid>
               <Typography color="primary">Write Your Experience</Typography>
               <QuillEditor
                 placeholder={"Start posting something"}
@@ -245,8 +238,8 @@ export default function Writeblog(props) {
                 onFilesChange={onFilesChange}
               />
             </Grid>
-            <Grid>
-              <Grid item>
+          </Grid>
+              <div style={{display:"flex",justifyContent:"center",alignItems:"center",marginTop:"30px"}}>
                 <Button
                 style={{backgroundColor:"#fcca03",color:"blue"}}
                   type="submit"
@@ -258,9 +251,8 @@ export default function Writeblog(props) {
                 >
                   Post
                 </Button>
-              </Grid>
-            </Grid>
-          </Grid>
+            </div>
+
         </Container>
       </form>
     </div>

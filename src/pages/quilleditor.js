@@ -148,9 +148,7 @@ class QuillEditor extends React.Component {
                     <button className="ql-code-block" />
                     <button className="ql-video" />
                     <button className="ql-blockquote" />
-                    <button className="ql-clean" />
-
-                    
+                    <button className="ql-clean" />     
 
                 </div>
                 <ReactQuill

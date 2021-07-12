@@ -98,7 +98,7 @@ export default function Forgotpassword() {
       <CssBaseline />
       <div className={classes.paper}>
         <Typography component="h1" variant="h5">
-          Sign in
+          Forget Password
         </Typography>
         <form className={classes.form}>
           <TextField
@@ -157,7 +157,7 @@ export default function Forgotpassword() {
         variable={validmail}
         fun={handlefrvalidmail}
         heading="You are not Registered"
-        text="Mail enntered is not registered, please provide registered mail or go to login for registraion"
+        text="Mail entered is not registered, please provide registered mail or go to login for registraion"
       />
       <Dialogcomponent
         variable={sentmail}
