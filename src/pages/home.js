@@ -90,6 +90,8 @@ function Home() {
 
   function deletepost(post_id) {
     console.log(post_id);
+    if(window.confirm("Do you want to delete this particular post"))
+    {
     Axios.post(
       "https://mentor-gvpce.herokuapp.com/deletepost",
       { id: post_id },
@@ -99,13 +101,14 @@ function Home() {
       }
     ).then((response) => {
       console.log(response);
+      const variables = {
+        skip: 0,
+        limit: Limit
+      };
+      getPosts(variables);
     });
-    const variables = {
-      skip: Skip,
-      limit: Limit
-    };
-    getPosts(variables);
   }
+}
 
   return (
     <>

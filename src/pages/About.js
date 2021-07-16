@@ -13,6 +13,7 @@ import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
+import {bounce} from "./scrolling.css";
 const useStyles = makeStyles({
   root: {
     minWidth: 275
@@ -67,7 +68,7 @@ const About = () => {
           <CardContent>
           This website enables users to write blogs about their interview experiences.Besides writing blogs,users can read and search for the content they want by using filters provided in the page.
             <br/>
-            <span style={{color:"#f03211"}}>To have a experience this website.Please login first</span>
+            <span style={{color:"#f03211"}}>To have a experience of this website.Please login first</span>
           </CardContent>
           </Card>
           </div>
