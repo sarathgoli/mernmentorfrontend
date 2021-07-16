@@ -15,6 +15,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MoreHorizIcon from "@material-ui/icons/MoreVert";
 import { selectUser } from "../components/redux_code/userSlice";
 import { useSelector } from "react-redux";
+import {bounce} from "./scrolling.css";
 
 const TTypography = withStyles({
   root: {
@@ -45,7 +46,8 @@ const useStyles = makeStyles({
     transform: "scale(0.8)"
   },
   title: {
-    fontSize: 14
+    fontSize: 14,
+    color:"#fcca03"
   },
   pos: {
     marginBottom: 12
@@ -66,7 +68,7 @@ export default function OutlinedCard(props) {
               <EditIcon />
             </NavLink>
           }
-          titleTypographyProps={{ variant: "body1"}}
+          titleTypographyProps={{ variant: "body1",color:"#fcca03"}}
           title={props.title}
           subheader={props.time}
         />
@@ -79,14 +81,14 @@ export default function OutlinedCard(props) {
               <DeleteIcon />
               </Button>
           }
-          titleTypographyProps={{ variant: "body1" }}
+          titleTypographyProps={{ variant: "body1",color:"#fcca03"}}
           title={props.title}
           subheader={props.time}
         />
       )
         : (
         <CardHeader
-          titleTypographyProps={{ variant: "body1" }}
+          titleTypographyProps={{ variant: "body1",color:"#fcca03"}}
           title={props.title}
           subheader={props.time}
         />
@@ -100,6 +102,9 @@ export default function OutlinedCard(props) {
         <p>
           Role:<span style={{ color: "#a60056" }}>{props.role}</span>
         </p>
+        <div class="bounce">
+        <p>Post content starts from below... </p>
+        </div>
         <div style={{ height: 150, overflowY: "scroll", marginTop: 10 }}>
           <div dangerouslySetInnerHTML={{ __html: props.desc }} />
         </div>

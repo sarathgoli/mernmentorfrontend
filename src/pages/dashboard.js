@@ -31,9 +31,8 @@ export default function Dashboard(props) {
     console.log(userposts);
     return (
 <>
-  <br/>
   <div style={{width:'75%',margin:'3rem auto'}}>
-    <div style={{textAlign:'center'}}>
+    <div style={{textAlign:'center',color:"blueviolet"}}>
       <h2>Posts Made by you</h2>
     </div>
   <br/>
